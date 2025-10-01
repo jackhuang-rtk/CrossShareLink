@@ -5,15 +5,15 @@
   <title>Open APP</title>
   <script>
     function openApp() {
-      window.location = 'myapp://path/example'; // TODO: app scheme
+      window.location = 'crossshare://'; // TODO: app scheme
       setTimeout(function(){
-        window.location = 'https://apps.apple.com/app/crossshare/id6747169753'; // TODO: app link
+        window.location = 'https://apps.apple.com/app/crossshare/id6747169753'; // TODO: app link by user-agent
       }, 1500);
     }
   </script>
 </head>
 <body onload="openApp()">
   <h2>Trying to open CrossShare...</h2>
-  <p>Not open CrossShare? <a href="myapp://path/example">Click here</a></p> // TODO: app scheme
+  <p>Not open CrossShare? <a href="crossshare://">Click here</a></p> <!-- TODO: app scheme -->
 </body>
 </html>
